@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import { Container, Row, Col, Form, Button  } from 'react-bootstrap'
+import { Container, Row, Col, Form, Button } from 'react-bootstrap'
 import { Divider, DatePicker } from 'antd'
 
 export default function Home() {
@@ -13,10 +13,11 @@ export default function Home() {
       <Container>
         <Row>
           <Col xs={12}>
-            This is Home Page
-            <a href="/next-page">
-              Go to next page
+            This is Next Page
+            <a href="/">
+              Go to home page
             </a>
+
             <Form>
               <Form.Group controlId="formBasicEmail">
                 <Form.Label>Email address</Form.Label>
@@ -36,7 +37,6 @@ export default function Home() {
               <Button variant="primary" type="submit">
                 Submit
               </Button>
-
 
               <Divider />
               <DatePicker placeholder="select date" />
